@@ -22,13 +22,13 @@ function check() {
     if (password == "") {
         error.innerHTML+= 'Ваш пароль не заполнен<br>'
     }
-    if (password.length <=5) {
-        error.innerHTML+= 'Ваш пароль слишком короткий<br>'
-    }
     if (confirmpassword == "") {
         error.innerHTML+= 'Подтверждение пароля не заполнено<br>'
     }
     
+    if (password.length <=5) {
+        error.innerHTML+= 'Ваш пароль слишком короткий<br>'
+    }
     else 
         error.innerHTML+=`Добро пожаловать, ${name}`
 }
