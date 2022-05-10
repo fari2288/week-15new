@@ -238,4 +238,8 @@
         background: none;
         font-family: 'Akshar', sans-serif;
     }
+
+    .google__image {
+        display: none;
+    }
 }
