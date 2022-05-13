@@ -47,18 +47,20 @@ switch (document.querySelector('.dropdown').value){
 let button=document.querySelector('.dropdown-menu')
 button.onclick=changeColor
 function changeColor() {
-    if (document.querySelector('.dropdown').value=="white") {
+    const color = document.querySelector('.dropdown').value
+    document.body.style.background= color
+    if (color=="white") {
         document.body.style.background='white';
     }
-    if (document.querySelector('.dropdown').value=="yellow") {
-        document.body.style.background='yellow';
+    if (color=="yellow") {
+        document.body.style.background='yellowu';
     }
-    if (document.querySelector('.dropdown').value=="pink") {
+    if (color=="pink") {
         document.body.style.background='pink';
     }
-    if (document.querySelector('.dropdown').value=="blue") {
+    if (color=="blue") {
         document.body.style.background='blue';
     }
-    if (document.querySelector('.dropdown').value=="green") {
+    if (color=="green") {
         document.body.style.background='green';
     }}

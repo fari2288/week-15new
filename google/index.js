@@ -10,19 +10,19 @@ function check() {
     let password = document.querySelector('#password').value
     let confirmpassword = document.querySelector('#confirmpassword').value
     error.innerHTML= ''
-    if (name == "") {
+    if (!name) {
         error.innerHTML+= 'Ваше имя не заполнено<br>'
     }
-    if (surname == "") {
+    if (!surname) {
         error.innerHTML+= 'Ваша фамилия не заполнена<br>'
     }
-    if (email == "") {
+    if (!email) {
         error.innerHTML+= 'Ваш email не заполнен<br>'
     }
-    if (password == "") {
+    if (!password) {
         error.innerHTML+= 'Ваш пароль не заполнен<br>'
     }
-    if (confirmpassword == "") {
+    if (!confirmpassword) {
         error.innerHTML+= 'Подтверждение пароля не заполнено<br>'
     }
     
